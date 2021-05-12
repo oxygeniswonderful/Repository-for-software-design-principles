@@ -1,14 +1,17 @@
 package ru.sbt.mipt.oop;
 
+import com.coolcompany.smarthome.events.SensorEventsManager;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 
 public class Application {
 
     public static void main(String... args) {
-
-        SmartHome smartHome = new SmartHomeJsonReader().readSmartHome("smart-home-1.js");
-
-        SensorEventCreator sensorEventCreator = new SensorEventCreator(smartHome);
-        sensorEventCreator.SensorEventCreatorLoop();
+        AbstractApplicationContext context = new AnnotationConfigApplicationContext(ProtectedSmartHomeConfiguration.class);
+        SensorEventsManager sensorEventsManager = context.getBean(SensorEventsManager.class);
+        sensorEventsManager.start();
     }
+
+
 }
 

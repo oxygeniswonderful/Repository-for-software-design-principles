@@ -1,5 +1,8 @@
 package ru.sbt.mipt.oop;
 
+import ru.sbt.mipt.oop.EventProcessor.DoorEventProcessor;
+import ru.sbt.mipt.oop.EventProcessor.LightEventProcessor;
+
 import static ru.sbt.mipt.oop.SensorEventType.*;
 import static ru.sbt.mipt.oop.SensorEventType.DOOR_CLOSED;
 

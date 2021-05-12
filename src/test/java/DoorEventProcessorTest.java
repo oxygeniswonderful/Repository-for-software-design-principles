@@ -1,5 +1,5 @@
 import org.junit.Test;
-import ru.sbt.mipt.oop.DoorEventProcessor;
+import ru.sbt.mipt.oop.EventProcessor.DoorEventProcessor;
 
 import java.util.Arrays;
 

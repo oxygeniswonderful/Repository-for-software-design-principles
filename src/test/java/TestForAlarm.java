@@ -1,5 +1,7 @@
-import static org.junit.Assert.*;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import ru.sbt.mipt.oop.alarm.Alarm;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestForAlarm {
     Alarm alarm = new Alarm();

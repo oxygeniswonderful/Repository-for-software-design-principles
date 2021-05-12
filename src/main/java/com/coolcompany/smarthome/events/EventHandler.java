@@ -1,2 +1,7 @@
-package com.coolcompany.smarthome.events;public class EventHandler {
+package com.coolcompany.smarthome.events;
+
+public interface EventHandler {
+
+    void handleEvent(CCSensorEvent event);
+
 }
